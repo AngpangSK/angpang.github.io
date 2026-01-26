@@ -1,59 +1,82 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>วันปีใหม่</title>
-  </head>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ปีใหม่</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:20px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+.card{
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    text-align:center;
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card .content{
+    padding:15px;
+}
+.card h3{
+    margin:0 0 8px;
+    font-size:18px;
+}
+.card p{
+    margin:0;
+    font-size:14px;
+    color:#555;
+}
+</style>
+</head>
 
-  <body background="https://thumb.photo-ac.com/74/74210d800038c785d2c6e9cbd837bd0c_t.jpeg">
-    <center>
+<body>
+<div class="container">
 
-      <h1>
-        <marquee onmouseover="stop()" onmouseout="start()" scrollamount="5">
-          🎀สวัสดีวันปีใหม่ 2026 🎉
-วันขึ้นปีใหม่ วันสิ้นปี 31 ธันวาคม – 1 มกราคม 🌞
-        </marquee>
-      </h1>
-      <br><br>
-      <img src="https://lh6.googleusercontent.com/63xMC_mSy-gHhwu87Rnl81UikLar6jy_OUCvFg8I_GAMAH14M6Qu5sJRyYhqpgJ0-0O-9UAfqa7gIy6X6mj2HROSkSFHEXmc5w5S-dmBwj6i6PrJBie6_Xkcg5VITbyiLZOAT0WpqVzUNi5RM-BRlUtDy4WxnuR187Lw0iSsfDnUrJCmfA0VfA=w1280" width="250" height="250">
-      ความหมายของวันสิ้นปี 
-     วันปีใหม่ส่งท้ายปีเก่า เป็นวันเริ่มนับ 1 ใหม่ในปีพุทธศักราช และคริสตศักราช ตรงกัยวันที่ 1 มกราคม ของทุกๆ ปีโดยยึดวันขึ้นปีใหม่ตาม ปฏิทินเกรโกเรียน ซึ่งเป็นปฏิทินที่ใช้แพร่หลายในประเทศตะวันตก มีระยะเวลา 1 ปียาวนาน 365.25 วัน 
-      <br><br>
-       ความสำคัญของปีใหม่ 
-     เวลาการนับ 1 ปีคือเวลาที่ขั้วโลก โคจรรอบดวงอาทิตย์ครบ 1 รอบ (365 วัน) นับได้เป็น 12 เดือนตามปฏิทินสุริยคติ จึงทำให้ปีใหม่คือช่วงเวลาของการขึ้นรอบใหม่หลังจากครบ 365 วันหรือ 12 เดือนนั่นเอง
-      <img src="https://lh4.googleusercontent.com/1wb56wIwjCxSXFqHCpRlliMNyBX6rk9arMFPsj0UHjVfamVG54qD5jb8Paoe-R_uly2IidA6AVetIe0_uIrehI_MhEbJqLyLRJenzM--L0jCfOvqCXwdjMv8FQH3LsceVa1PKBzRdilj0uyOXFNzOiySfm5GtG8_Zk_HPBMWsCOVldURqPPBPA=w1280" width="250" height="250">
-      <br><br>
-      <img src="https://lh5.googleusercontent.com/S5hkvz9CU3WB9uk6N1R9FbZZuIY8ZWjwDSrXN0atuUAR3i8PRePspHyALJSj1Iy3BX5LZ5sMyGx4tF5Ny_jkd4GmJeKxWGW-WZAPgR0onUjS8RbfPNTXQqVpHsQDlWIumeGawr98wxhSaNNxHjG1m59NkjtRLgGeYBTzaCqTF2UrVYan_vzv3g=w1280" width="250" height="250">
-      ความเป็นมา 
-     วันปีใหม่ มีประวัติความเป็นมาซึ่งเปลี่ยนแปลงไปตามยุคสมัยและความเหมาะสม ตั้งแต่ในสมัยเริ่มแรกเมื่อชาวบาบิโลเนียเริ่มคิดค้นการใช้ปฏิทิน โดยอาศัยระยะต่าง ๆ ของดวงจันทร์เป็นหลักในการนับ เมื่อครบ 12 เดือนก็กำหนดว่าเป็น 1 ปี และเพื่อให้เกิดความพอดีระหว่างการนับปีตามปฏิทินกับปีตามฤดูกาล จึงได้เพิ่มเดือนเข้าไปอีก 1 เดือน เป็น 13 เดือนในทุก 4 ปี 
-      <br><br>
-      กิจกรรมที่จัดในวันขึ้นปีใหม่ 
-1.ทำความสะอาดบ้านเรือน ตกแต่งให้สวยงาม 
-2.มอบของขวัญปีใหม่ มอบดอกไม้ กราอบขอพรจากผู้ใหญ่ รวมไปถึงการส่งบัตร ส.ค.ส.
-3.ทำบุญตักบาตร ถวายสังฆทาน เข้าวัดฟังธรรม บำเพ็ญกุศล
-4.การจัดงานเลี้ยง งานรื่นเริง ในหน่วยงานต่างๆ
-5.กลับต่างจังหวัด พบหน้าครอบครัว อยู่กับผู้มีพระคุณ
-6.สวดมนต์ข้ามปี เป็นอีกกิจกรรมที่พุทธศาสนิกชนนิยมปฏิบัติ
-      <img src="https://lh5.googleusercontent.com/p3Is6Xyjg4mgLuU06vUrrpcGrN2xtPuCDqfJczDh0JhQFBWFzaz8yr8FMJBdkR5talrslqxaWKDjyXILrKN448kXNccub88EmNGcUPVPX8xrvuywwyjCnMzJ419cEuRM4Xq6acg31XPAwDB_R0rYT5mECgEx7R-JNR1I8pP0-iC6HpdO_A8Yhw=w1280" width="250" height="250">
-      <br><br>
-      <img src="https://lh6.googleusercontent.com/jKL8HUB8bp--dYxNVL31n-9Ajm9dYii5rrVvjQpXZ3GBWMcPgAP7xVrc98wdAaCADQHBffa6XlVF89r6jCfynaVABCB-1I8cQbBCSFdzsiiNvdy32QueRXUkcDNR0N29UynQUVBUEB1A8l2za0oiEOqD7h2xiifRF3aG-_kZzgwsLpPBBS80Zw=w1280" width="250" height="250">
-      กลอนปีใหม่นี้
-      ปีใหม่เวียนมาถึงอีกครั้งหนึ่ง
-ขอให้ซึ่งความสุขทุกถิ่นที่
-สุขภาพแข็งแรงแจ่มใสดี
-สิ่งไม่ดีผ่านพ้นไปกับกาล
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1SuNK7VVeUab47cNsWFFwpE_XulGISYDciA&s">
+        <div class="content">
+            <h3>เพลงปีใหม่ เพลงที่ 1</h3>
+            <p>เพลงอวยพรรับปีใหม่ เต็มไปด้วยความสุขและรอยยิ้ม</p>
+        </div>
+    </div>
 
-ขอให้คิดสิ่งใดได้สมหวัง
-มีพลังมุ่งมั่นสร้างสรรค์งาน
-พบแต่สุขความรักและเบิกบาน
-ตลอดปีตลอดกาลปีใหม่เอย
-      <br><br>
-      <iframe height="300" src="https://www.youtube.com/embed/-ZoRz7bkd_Q?list=RD-ZoRz7bkd_Q" title="เพลงพระราชนิพนธ์ พรปีใหม่ - ธงไชย แมคอินไตย์ และ วิโอเลต วอเทียร์ Ost.พรจากฟ้า【Official MV】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe height="300" src="https://www.youtube.com/embed/RrN-85lyU3k?list=RDRrN-85lyU3k" title="สวัสดีปีใหม่ - เบิร์ด ธงไชย【OFFICIAL MV】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe height="300" src="https://www.youtube.com/embed/ziV7eGnASNc?list=RDziV7eGnASNc" title="ปีใหม่ปีนี้ (LAST SUNSET) - SARAN Ft. The BESTS [Full Band Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe height="300" src="https://www.youtube.com/embed/C9LLP2elz6g?list=RDC9LLP2elz6g" title="Happy New Year - Only Monday (เนื้อเพลง)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img src="pic.jpg" width="250" height="250">
-      <b>ด.ช.สมบูรณ์ ชัยบุญญโรจน์ ม.203 เลขที่ 9</b>
-    </center>
-  </body>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-B7jROT97wCIFrXHUVXwqwpJJ68IrEyPXew&s">
+        <div class="content">
+            <h3>เพลงปีใหม่ เพลงที่ 2</h3>
+            <p>ส่งความหวังและกำลังใจให้เริ่มต้นปีใหม่อย่างสดใส</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJFfsePWiVwMRuznkafNs4jXYaZ9CKhPGPQ&s">
+        <div class="content">
+            <h3>เพลงปีใหม่ เพลงที่ 3</h3>
+            <p>บรรยากาศอบอุ่น เหมาะสำหรับฟังกับครอบครัว</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzSFSvD4L7o6MG8T5QsEP__dJI0obIeHpPg&s">
+        <div class="content">
+            <h3>เพลงปีใหม่ เพลงที่ 4</h3>
+            <p>เพลงสร้างแรงบันดาลใจ ต้อนรับการเริ่มต้นใหม่</p>
+        </div>
+    </div>
+
+</div>
+</body>
 </html>
-
