@@ -1,47 +1,43 @@
-<html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ประวัติส่วนตัว</title>
+
     <style>
         body {
             font-family: 'Sarabun', sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f0f0f0;
             color: #333;
         }
 
-       
         .header-section {
-            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLcQkwQG1efFmJqsoooOqeJyrrSKDlpOucMg&s') no-repeat center center;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLcQkwQG1efFmJqsoooOqeJyrrSKDlpOucMg&s')
+                no-repeat center;
             background-size: cover;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: white;
         }
+
         .header-section h1 {
-            font-size: 42px;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .header-section p {
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.5);
         }
 
-       
         .container {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: auto;
         }
 
         .row {
             display: flex;
-            align-items: center;
+            gap: 20px;
             padding: 30px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .bg-pink { background-color: #fde2e4; }
@@ -51,117 +47,126 @@
             flex: 1;
             text-align: center;
         }
+
         .content-image img {
-            max-width: 90%;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 300px;
+            border-radius: 6px;
         }
 
         .content-text {
             flex: 1.5;
-            padding: 0 20px;
-        }
-        .content-text h2 {
-            color: #0369a1;
-            margin-top: 0;
-        }
-
-        .activities-list {
-            padding-left: 20px;
-        }
-
-        .poem-section {
-            text-align: center;
-            font-style: italic;
             line-height: 1.8;
         }
 
-   
+        h2 {
+            margin-top: 0;
+            color: #0369a1;
+        }
+
+        /* Activities */
+        .activities-title {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .activity {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .activity img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .map {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 15px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
         @media (max-width: 768px) {
-            .row { flex-direction: column; text-align: center; }
-            .content-text { margin-top: 20px; }
+            .row {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="header-section">
-        <h1>ประวัติส่วนตัว</h1>
-    </div>
-    <div class="container">
+<div class="header-section">
+    <h1>ประวัติส่วนตัว</h1>
+</div>
 
-        <div class="row bg-light-blue" style="flex-direction: row-reverse;">
-            <div class="content-image">
-                <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/623815702_2563200794062200_7087472554387489314_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGRMr8IRinQDd58SHNMziNk5r909J-bezvmv3T0n5t7OzDWUP5VzecFWbw78cg1uUKrmOcaiNjJxWQsa5tt5qa7&_nc_ohc=mZ_l7-E9VloQ7kNvwHuwPKV&_nc_oc=AdlHhEi2d6Wb70cWkUp7l0n7W2kt5ys2gLZ8mxNyGbZNC5aEYv7HNVd4E-EzSWosqxV3aROvTpt-CKnQyCuCa0HP&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=03_Q7cD4gHm4IVx9hAXO17C8dfNntSMxTjOfIIDaRoCJamIwgryAg&oe=69AE794A">
-            </div>
-            <div class="content-text">
-                <h2 style="color: #0ea5e9;">สมบูรณ์ ชัยบุญญโรจน์</h2>
-                <p style="text-align: left;">
-                    ชื่อเล่น : อังปัง    อายุ 14 ปี <br>
-                    โรงเรียนสวนกุหลาบวิทยาลัย 🌹<br>
-                    ชั้นมัธยมศึกษาปีที่ 2 ห้อง 203 <br>
-                    ครูประจำชั้น :  ภาภัสสร พัฒนรักษ์, ครูณัฐพล รื่นรมย์<br>
-                    สิ่งที่ชอบทำ : เล่นเกม  <br>
-                    สิ่งที่อยากเป็น : แพทย์<br> 
-                    สีที่ชอบ :  ดำ <br> 
-                    ผลไม้ที่ชอบ : ชมพู่<br> 
-                    เครื่องดื่มที่ชอบ : ชานมไข่มุก<br>
-                    Facebook : Anbang Li<br>
-                    เบอร์โทร : 095-957-6146<br>
-                </p>
-            </div>
+<div class="container">
+
+    <div class="row bg-light-blue">
+        <div class="content-image">
+            <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.15752-9/623815702_2563200794062200_7087472554387489314_n.jpg">
         </div>
-        <center><h1>กิจกรรมระดับ ม.2 ของฉัน</h1></center>
-        <center>
-        <div class="row bg-pink">
-            
-            <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5BEjCgg7YOyymjbw4n5OK1SddQBJw6WaXZSQMFTcqT4oHiks9be.jpg" height="200">
-            <div class="content-text">กิจกรรมเปิดเทอม</div>
-            <br>
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqCoQAacy4olOmEn7uEj3j6RiCtRGcwVqmg&s" height="200">
-            <div class="content-text">กิจกรรมวิทยาศาสตร์</div>
-            <br>
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGnk0Vbh8TAZSZTppM-JLwOgKi7lnkGzMbA&s" height="200">
-            <div class="content-text">กิจกรรมสมานมิตร</div>
-            <br>
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0nY8BjXbU1TR28JjP9Suyo6sKAUxOOC8_g&s" height="200">
-            <div class="content-text">กิจกรรมวันครู</div>
-            <br>
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xeywBedQ5ElPC2Wi9ryeyzqwKxcJjkzj7w&s" height="200">
-            <div class="content-text">กิจกรรมวันปีใหม่</div>
-            <br>
-            <br>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmBC6Bgb5LfaUVHV3HzpaU7pDNib5mZzBkQ&s" height="200">
-            <div class="content-text">กิจกรรมวันจตุรมิตร</div>
-            <br>
-            <br>
-            <img src="https://om.moe.go.th/wp-content/uploads/2023/12/LINE_ALBUM_%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A1%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C-%E0%B8%84%E0%B8%A3_%E0%B9%92%E0%B9%93%E0%B9%91%E0%B9%92%E0%B9%91%E0%B9%93_2.jpg" height="200">
-            <div class="content-text">กิจกรรมลูกเสือ</div>
-            <br>
-            <br>
-            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQlrdFZyRz4Un6XH3zgeHG6GnwGbqIggC-oOBnC8oeWWcZN6qgx7PQnMtb1L1R0CZXp75LlkoKQVJhiJIOuj7rcLMFiXvs87E7MKIT9nt9cEsEGfIVSl3ZW2kLtYQDt_VxcdFb0jmBgZkkCc1LDVs0SfzteHhu9SB1ZqnlqgpXD-8APkKRKHFTreAY=w1280" height="200">
-            <div class="content-text">กิจกรรมวันปิยมหาราช</div>
-            <br>
-            <br>
+
+        <div class="content-text">
+            <h2>สมบูรณ์ ชัยบุญญโรจน์</h2>
+            ชื่อเล่น : อังปัง อายุ 14 ปี<br>
+            โรงเรียนสวนกุหลาบวิทยาลัย 🌹<br>
+            ม.2 ห้อง 203<br>
+            ครูประจำชั้น : ภาภัสสร พัฒนรักษ์, ครูณัฐพล รื่นรมย์<br>
+            สิ่งที่ชอบทำ : เล่นเกม<br>
+            สิ่งที่อยากเป็น : แพทย์<br>
+            สีที่ชอบ : ดำ<br>
+            ผลไม้ที่ชอบ : ชมพู่<br>
+            เครื่องดื่มที่ชอบ : ชานมไข่มุก<br>
+            Facebook : Anbang Li<br>
+            เบอร์โทร : 095-957-6146
         </div>
-        <div class="row bg-light-blue" style="flex-direction: row-reverse;">
-            <div class="content-image">
-                <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRqpUtyyFa4lDH1gseSxbMrAhyn8yKUOTv9MyrKJfIY7QckIy2OBuqePbk6JwRMND0Kky3br_b4rsVkHYqandoDWgFcgm6qawtOA_7LF6V1rEy7asmS1uSz9fLNdLBaqWNZFco8pitVMR2GZEu7yrramB44mJ5hBXyvp5IPiqedw_xTy8luyOxy1x_8nYfLGnYvCBzOGeIoGjXV6UPdav4N4VDVsfjhZWLlmp0=w1280">
-            </div>
-            <div class="content-text">
-                    <h2>📗🩷Social links  โรงเรียนสวนกุหลาบวิทยาลัย🩵</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123963.2482839473!2d100.34241262598749!3d13.847950463690461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e284bf07b056ef%3A0x91389b7279f9988d!2sSuankularb%20Wittayalai%20Nonthaburi%20School!5e0!3m2!1sen!2sth!4v1770466494228!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    ที่อยู่โรงเรียนสวนกุหลาบวิทยาลัย <br>
-เลขที่ 88 ถนนตรีเพชร แขวงวังบูรพาภิรมย์ <br>
-เขตพระนคร กรุงเทพมหานคร<br>
-            </div>
-        </div>
-        </center>
     </div>
+
+    <h2 class="activities-title">กิจกรรมระดับ ม.2 ของฉัน</h2>
+
+    <div class="activities bg-pink">
+        <div class="activity"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5BEjCgg7YOyymjbw4n5OK1SddQBJw6WaXZSQMFTcqT4oHiks9be.jpg">เปิดเทอม</div>
+        <div class="activity"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqCoQAacy4olOmEn7uEj3j6RiCtRGcwVqmg&s">วิทยาศาสตร์</div>
+        <div class="activity"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGnk0Vbh8TAZSZTppM-JLwOgKi7lnkGzMbA&s">สมานมิตร</div>
+        <div class="activity"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0nY8BjXbU1TR28JjP9Suyo6sKAUxOOC8_g&s">วันครู</div>
+        <div class="activity"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xeywBedQ5ElPC2Wi9ryeyzqwKxcJjkzj7w&s">วันปีใหม่</div>
+        <div class="activity"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmBC6Bgb5LfaUVHV3HzpaU7pDNib5mZzBkQ&s">จตุรมิตร</div>
+        <div class="activity"><img src="https://om.moe.go.th/wp-content/uploads/2023/12/LINE_ALBUM_%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A1%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%A7%E0%B8%99%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C-%E0%B8%84%E0%B8%A3_%E0%B9%92%E0%B9%93%E0%B9%91%E0%B9%92%E0%B9%91%E0%B9%93_2.jpg">ลูกเสือ</div>
+    </div>
+
+    <div class="row bg-light-blue">
+        <div class="content-text">
+            <h2>Social links โรงเรียนสวนกุหลาบวิทยาลัย</h2>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.350742!2d100.5018!3d13.7563!5e0!3m2!1sth!2sth!4v123456"></iframe>
+            </div>
+
+            ที่อยู่โรงเรียนสวนกุหลาบวิทยาลัย<br>
+            88 ถนนตรีเพชร แขวงวังบูรพาภิรมย์ เขตพระนคร กรุงเทพมหานคร
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
